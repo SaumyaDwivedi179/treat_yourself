@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .c-item {
+        height: 480px;
+      }
+
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+      }
+
+      .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="service">
+      <a href="index.html" target="_blank"
+        ><i class="fa-solid fa-house"></i> Home</a
+      >
+      <span>Services</span>
+    </header>
+    <main>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="./images/eyelash.webp" alt="Jane" style="width: 100%" />
+            <div class="container">
+              <h2>EYELASH Extension</h2>
+              <p class="title">
+                DISCOVER THE NEWEST GENERATION OF EYELASH EXTENSIONS
+              </p>
+              <p>
+                Our stylist has the highest level of application and lash design
+                skills, you’ll get individually applied and long-lasting lashes.
+              </p>
+
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./images/Facial.webp" alt="Mike" style="width: 100%" />
+            <div class="container">
+              <h2>Facial</h2>
+              <p class="title"> The facial treatments are part of the unique beauty care experience that we offer. </p>
+              <p>
+                A facial is a carefully crafted skin-care treatment that
+                cleanses, revitalizes, and nurtures your skin, leaving you with
+                a radiant complexion and a renewed sense of self.
+              </p>
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="./images/headspa-min.webp"
+              alt="John"
+              style="width: 100%"
+            />
+            <div class="container">
+              <h2>HEAD SPA</h2>
+              <p class="title">Relax and unwind with a head massage by our highly skilled head therapists.</p>
+              <p>A perfect relaxation with shiatsu massage, shampooing and the silky steam therapy in a private room with aromas and music to relax to. </p>
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./images/massage.jpg" alt="John" style="width: 100%" />
+            <div class="container">
+              <h2>Massage</h2>
+              <p class="title">Treat yourself to deep relaxation and pain relief with a deep tissuemassage.</p>
+              <p>Massage therapy is a profound experience that unites the body and soul, harmonizing their rhythms and bringing balance and tranquility sensation.</p>
+            
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./images/nail.jpeg" alt="John" style="width: 100%" />
+            <div class="container">
+              <h2>Nails</h2>
+              <p class="title">Our technicians are trained specifically in the Japanese tradition, and incorporate the latest design styles.</p>
+              <p>Nail Art is more than just pretty, colorful designs. It requires advanced techniques, skill, and superior quality materials </p>
+              
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img
+              src="./images/Natural-Makeup-Look-1.jpg"
+              alt="John"
+              style="width: 100%"
+            />
+            <div class="container">
+              <h2>Touch up</h2>
+              <p class="title"> application of cosmetics treatment of hair and nourishment of skin by various methods</p>
+              <p>Professional makeup artists are responsible for creating unique makeup looks and inspiring confidence in their clients</p>
+              
+              <p><button class="button">Book now</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container mt-5">
+      <button
+        type="button"
+        class="btn btn-primary floating-button"
+        data-toggle="modal"
+        data-target="#taxiModal"
+      >
+        <i class="fa-regular fa-calendar-check"></i> <span id="booking">Book Appointment</span>
+      </button>
+
+      <div class="modal" id="taxiModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">
+                <span id="booking">Book Your Visit Now</span>
+              </h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <p><i class="fa-regular fa-id-card"></i> Enter your Name:</p>
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Pickup Location"
+              />
+              <p><i class="fa-solid fa-spa"></i> Select Service:</p>
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Destination"
+              />
+              <p><i class="fas fa-clock"></i> Select Time:</p>
+              <input type="time" class="form-control mb-3" />
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Book Now</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="down">
+      <div class="logo"><i class="fa-solid fa-spa"></i></div>
+      <div class="brand">treat yourself</div>
+      <div id="foot">
+        <div>
+          <p class="contact">follow us on</p>
+          <p class="para"><i class="fa-brands fa-instagram"></i>instagram</p>
+          <p class="para">facebook</p>
+        </div>
+        <div>
+          <p class="contact">Contact us</p>
+          <p class="para">
+            email :
+            <a href="mailto:mail@christuniversity.in" target="_blank"
+              >@christuniversity.in</a
+            >
+          </p>
+          <p class="para">
+            phone :<a href="tel: +91 0123456789">+91 0123456789</a>
+          </p>
+        </div>
+      </div>
+      <p class="copy">&copy; ALL RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+</html>

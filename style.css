@@ -1,0 +1,154 @@
+html,body{ 
+    height: 100%;
+    margin: 0;
+    background-color: rgb(129, 86, 106);
+}
+.service{
+    text-align: center;
+    height: 40px;
+    /* background-color: #0e0d0d; */
+    border-bottom: 1px solid white;
+ }
+  .service>span{
+    font-size: 300%;
+    color: rgb(17, 60, 60);
+    font-family:cursive;
+     padding: 10px 60px; 
+
+    
+    /* border-top: 1px solid white; */
+   }
+   .service>a{
+    display: flex;
+    align-items:center;
+    justify-items:flex-start;
+    padding-top: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(3, 9, 26);
+    font-weight:900;
+   }
+/* Three columns side by side */
+.column {
+     float: left; 
+    width: 32%;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    padding-top:5em;
+    
+
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .down{
+  background-color: #2a2c2d;
+  color: white;
+  padding-top: 3em;
+  border-top: 1px solid white;
+  }
+
+.logo{
+   
+    /* height:200px;
+    width: 100%; */
+    /* background-color: rgb(68, 255, 0); */
+    display: flex;
+    justify-content: center;
+}
+.logo>i{
+    font-size: 500%;
+}
+.brand{
+    top: 50%;
+    font-size: 150%;
+    text-shadow: 0 0 15px #000;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing:8px ;
+    display: flex;
+    justify-content: center;
+}
+#foot{
+    /* background-color: pink; */
+    height: 200px;
+    display: flex;
+    justify-content:space-around;
+
+}
+.contact{
+    font-size: 100%;
+    text-shadow: 0 0 15px #000;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing:8px ;
+   
+}
+.para>a{
+    text-decoration: none;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    font-size:15px;
+
+}
+
+.para{
+    font-size: 80%;
+    text-shadow: 0 0 15px #000;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing:5px ;
+}
+.copy{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 4em;
+
+}
+  
+

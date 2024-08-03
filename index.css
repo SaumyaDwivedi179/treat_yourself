@@ -1,0 +1,184 @@
+/* google maps */
+ html,body{
+    height: 100%;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 180%;
+    color: #fff;
+    background-color: #323232;
+    text-align: center;
+
+
+}
+.slideimg1{
+    background:url(./images/back.jpg);
+    min-height: 100%;
+    
+}
+.slideimg2{
+    background: url(./images/slide1.jpg);
+    min-height: 60%;
+}
+.slideimg1,.slideimg2{
+ 
+position: relative;
+opacity:.85 ;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+}
+section{
+    padding: 50px 80px 50px 80px;
+}
+.fixedtxt{
+    position: absolute;
+    top: 50%;
+    font-size: 650%;
+    text-shadow: 0 0 15px #000;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing:8px ;
+}
+@media(max-width:768px){
+    .fixedtxt{
+        font-size: 250px;
+    }
+    .fixedtxt{
+        font-size: 95%;
+    }
+    section>p{  
+        font-size: 90%;
+    }
+   
+}
+/* header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+.head{
+    height:10%;
+    background-color: rgb(71, 120, 94);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.nav{
+     margin-left:38em; 
+}
+.nav >a{
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 4em;
+    
+  
+}
+.brand{
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 250%;
+    padding-left:1px;
+}
+.modal-body>p{
+    font-size: 100%;
+    /* text-shadow: 0 0 15px #000; */
+    width: 100%;
+    text-transform: uppercase;
+    /* letter-spacing:8px ; */
+    color: #000;
+}
+.modal-header{
+    color: #000;
+}
+
+    .logo {
+        width: 100%;
+        max-width: 75px;
+        height: auto;
+        padding-left: 2px;
+        
+    }
+
+    .logo svg {
+        fill: #333;
+        transition: fill 0.3s ease;
+    }
+
+    .logo svg:hover {
+        fill: #ff7f7f;
+    }
+    .down{
+        background-color: #262e32;
+        color: white;
+        padding-top: 2em;
+        border-top: 1px solid white;
+        }
+      
+      .logo1{
+         
+          /* height:200px;
+          width: 100%; */
+          /* background-color: rgb(68, 255, 0); */
+          display: flex;
+          justify-content: center;
+      }
+      .logo1>i{
+          font-size: 500%;
+      }
+      .brand1{
+          top: 50%;
+          font-size: 150%;
+          text-shadow: 0 0 15px #000;
+          width: 100%;
+          text-transform: uppercase;
+          letter-spacing:8px ;
+          display: flex;
+          justify-content: center;
+      }
+      #foot{
+          /* background-color: pink; */
+          height: 100px;
+          display: flex;
+          justify-content:space-around;
+      
+      }
+      .contact{
+          font-size: 100%;
+          text-shadow: 0 0 15px #000;
+          width: 100%;
+          text-transform: uppercase;
+          letter-spacing:8px ;
+         
+      }
+      .para>a{
+          text-decoration: none;
+          color: white;
+          font-family:'Times New Roman', Times, serif;
+          text-transform: lowercase;
+          letter-spacing: 0;
+          font-size:15px;
+      
+      }
+      
+      .para{
+          font-size: 80%;
+          text-shadow: 0 0 15px #000;
+          width: 100%;
+          text-transform: uppercase;
+          letter-spacing:5px ;
+      }
+      .copy{
+          text-align: center;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          padding-bottom: 4em;
+      }
+      
+        
+
